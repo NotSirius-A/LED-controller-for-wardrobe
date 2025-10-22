@@ -1,0 +1,1655 @@
+
+/home/sirius/.cache/arduino/sketches/2FA57846A167C095ACDC73C5B099BE62/LED_szafka_src.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+../../../../crt1/gcrt1.S:61
+   0:	3d c0       	rjmp	.+122    	; 0x7c <__ctors_end>
+   2:	00 00       	nop
+../../../../crt1/gcrt1.S:67
+   4:	62 c0       	rjmp	.+196    	; 0xca <__bad_interrupt>
+   6:	00 00       	nop
+../../../../crt1/gcrt1.S:68
+   8:	60 c0       	rjmp	.+192    	; 0xca <__bad_interrupt>
+   a:	00 00       	nop
+../../../../crt1/gcrt1.S:69
+   c:	5e c0       	rjmp	.+188    	; 0xca <__bad_interrupt>
+   e:	00 00       	nop
+../../../../crt1/gcrt1.S:70
+  10:	5c c0       	rjmp	.+184    	; 0xca <__bad_interrupt>
+  12:	00 00       	nop
+../../../../crt1/gcrt1.S:71
+  14:	5a c0       	rjmp	.+180    	; 0xca <__bad_interrupt>
+  16:	00 00       	nop
+../../../../crt1/gcrt1.S:72
+  18:	58 c0       	rjmp	.+176    	; 0xca <__bad_interrupt>
+  1a:	00 00       	nop
+../../../../crt1/gcrt1.S:73
+  1c:	7d c1       	rjmp	.+762    	; 0x318 <__vector_7>
+  1e:	00 00       	nop
+../../../../crt1/gcrt1.S:74
+  20:	54 c0       	rjmp	.+168    	; 0xca <__bad_interrupt>
+  22:	00 00       	nop
+../../../../crt1/gcrt1.S:75
+  24:	3f c1       	rjmp	.+638    	; 0x2a4 <__vector_9>
+  26:	00 00       	nop
+../../../../crt1/gcrt1.S:76
+  28:	50 c0       	rjmp	.+160    	; 0xca <__bad_interrupt>
+  2a:	00 00       	nop
+../../../../crt1/gcrt1.S:77
+  2c:	4e c0       	rjmp	.+156    	; 0xca <__bad_interrupt>
+  2e:	00 00       	nop
+../../../../crt1/gcrt1.S:78
+  30:	4c c0       	rjmp	.+152    	; 0xca <__bad_interrupt>
+  32:	00 00       	nop
+../../../../crt1/gcrt1.S:79
+  34:	4a c0       	rjmp	.+148    	; 0xca <__bad_interrupt>
+  36:	00 00       	nop
+../../../../crt1/gcrt1.S:80
+  38:	48 c0       	rjmp	.+144    	; 0xca <__bad_interrupt>
+  3a:	00 00       	nop
+../../../../crt1/gcrt1.S:81
+  3c:	46 c0       	rjmp	.+140    	; 0xca <__bad_interrupt>
+  3e:	00 00       	nop
+../../../../crt1/gcrt1.S:82
+  40:	44 c0       	rjmp	.+136    	; 0xca <__bad_interrupt>
+  42:	00 00       	nop
+../../../../crt1/gcrt1.S:83
+  44:	42 c0       	rjmp	.+132    	; 0xca <__bad_interrupt>
+  46:	00 00       	nop
+../../../../crt1/gcrt1.S:84
+  48:	40 c0       	rjmp	.+128    	; 0xca <__bad_interrupt>
+  4a:	00 00       	nop
+../../../../crt1/gcrt1.S:85
+  4c:	3e c0       	rjmp	.+124    	; 0xca <__bad_interrupt>
+  4e:	00 00       	nop
+../../../../crt1/gcrt1.S:86
+  50:	3c c0       	rjmp	.+120    	; 0xca <__bad_interrupt>
+  52:	00 00       	nop
+../../../../crt1/gcrt1.S:87
+  54:	3a c0       	rjmp	.+116    	; 0xca <__bad_interrupt>
+  56:	00 00       	nop
+../../../../crt1/gcrt1.S:88
+  58:	38 c0       	rjmp	.+112    	; 0xca <__bad_interrupt>
+  5a:	00 00       	nop
+../../../../crt1/gcrt1.S:89
+  5c:	36 c0       	rjmp	.+108    	; 0xca <__bad_interrupt>
+  5e:	00 00       	nop
+../../../../crt1/gcrt1.S:90
+  60:	34 c0       	rjmp	.+104    	; 0xca <__bad_interrupt>
+  62:	00 00       	nop
+../../../../crt1/gcrt1.S:91
+  64:	32 c0       	rjmp	.+100    	; 0xca <__bad_interrupt>
+  66:	00 00       	nop
+../../../../crt1/gcrt1.S:92
+  68:	30 c0       	rjmp	.+96     	; 0xca <__bad_interrupt>
+  6a:	00 00       	nop
+../../../../crt1/gcrt1.S:93
+  6c:	2e c0       	rjmp	.+92     	; 0xca <__bad_interrupt>
+  6e:	00 00       	nop
+../../../../crt1/gcrt1.S:94
+  70:	2c c0       	rjmp	.+88     	; 0xca <__bad_interrupt>
+  72:	00 00       	nop
+../../../../crt1/gcrt1.S:95
+  74:	2a c0       	rjmp	.+84     	; 0xca <__bad_interrupt>
+  76:	00 00       	nop
+../../../../crt1/gcrt1.S:96
+  78:	28 c0       	rjmp	.+80     	; 0xca <__bad_interrupt>
+	...
+
+0000007c <__ctors_end>:
+__trampolines_start():
+../../../../crt1/gcrt1.S:230
+  7c:	11 24       	eor	r1, r1
+../../../../crt1/gcrt1.S:231
+  7e:	1f be       	out	0x3f, r1	; 63
+../../../../crt1/gcrt1.S:232
+  80:	cf ef       	ldi	r28, 0xFF	; 255
+../../../../crt1/gcrt1.S:234
+  82:	cd bf       	out	0x3d, r28	; 61
+../../../../crt1/gcrt1.S:236
+  84:	df e3       	ldi	r29, 0x3F	; 63
+../../../../crt1/gcrt1.S:237
+  86:	de bf       	out	0x3e, r29	; 62
+
+00000088 <_initThreeStuff()>:
+_Z15_initThreeStuffv():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/main.cpp:104
+
+  /* Minimum: Reset if we wound up here through malfunction - this relies on user clearing the  *
+   * register on startup, which is rarely done in Arduino land.                                 */
+  void __attribute__((weak)) init_reset_flags() ;
+  void __attribute__((weak)) init_reset_flags() {
+    uint8_t flags = RSTCTRL.RSTFR;
+  88:	80 91 40 00 	lds	r24, 0x0040	; 0x800040 <digital_pin_to_bit_mask+0x7f7a36>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/main.cpp:105
+    RSTCTRL.RSTFR = flags;
+  8c:	80 93 40 00 	sts	0x0040, r24	; 0x800040 <digital_pin_to_bit_mask+0x7f7a36>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/main.cpp:106
+    if (flags == 0) {
+  90:	81 11       	cpse	r24, r1
+  92:	05 c0       	rjmp	.+10     	; 0x9e <_initThreeStuff()+0x16>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/main.cpp:107
+      _PROTECTED_WRITE(RSTCTRL.SWRR, 1);
+  94:	98 ed       	ldi	r25, 0xD8	; 216
+  96:	21 e0       	ldi	r18, 0x01	; 1
+  98:	94 bf       	out	0x34, r25	; 52
+  9a:	20 93 41 00 	sts	0x0041, r18	; 0x800041 <digital_pin_to_bit_mask+0x7f7a37>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/main.cpp:109
+    }
+    GPIOR0 = flags;
+  9e:	8c bb       	out	0x1c, r24	; 28
+
+000000a0 <__do_copy_data>:
+__do_copy_data():
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  a0:	1c e3       	ldi	r17, 0x3C	; 60
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  a2:	a0 e0       	ldi	r26, 0x00	; 0
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  a4:	bc e3       	ldi	r27, 0x3C	; 60
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  a6:	ec e1       	ldi	r30, 0x1C	; 28
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  a8:	f6 e0       	ldi	r31, 0x06	; 6
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  aa:	02 c0       	rjmp	.+4      	; 0xb0 <__do_copy_data+0x10>
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  ac:	05 90       	lpm	r0, Z+
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  ae:	0d 92       	st	X+, r0
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  b0:	a0 33       	cpi	r26, 0x30	; 48
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  b2:	b1 07       	cpc	r27, r17
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  b4:	d9 f7       	brne	.-10     	; 0xac <__do_copy_data+0xc>
+
+000000b6 <__do_clear_bss>:
+__do_clear_bss():
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  b6:	2c e3       	ldi	r18, 0x3C	; 60
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  b8:	a0 e3       	ldi	r26, 0x30	; 48
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  ba:	bc e3       	ldi	r27, 0x3C	; 60
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  bc:	01 c0       	rjmp	.+2      	; 0xc0 <.do_clear_bss_start>
+
+000000be <.do_clear_bss_loop>:
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  be:	1d 92       	st	X+, r1
+
+000000c0 <.do_clear_bss_start>:
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  c0:	ac 33       	cpi	r26, 0x3C	; 60
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  c2:	b2 07       	cpc	r27, r18
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  c4:	e1 f7       	brne	.-8      	; 0xbe <.do_clear_bss_loop>
+.do_clear_bss_start():
+../../../../crt1/gcrt1.S:314
+  c6:	98 d1       	rcall	.+816    	; 0x3f8 <main>
+../../../../crt1/gcrt1.S:315
+  c8:	83 c2       	rjmp	.+1286   	; 0x5d0 <_exit>
+
+000000ca <__bad_interrupt>:
+__vector_22():
+  ca:	9a cf       	rjmp	.-204    	; 0x0 <__vectors>
+
+000000cc <micros>:
+micros():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:521
+    #else /* TCA */
+      uint8_t ticks;
+    #endif
+    uint8_t flags;
+    /* Save current state and disable interrupts */
+    uint8_t oldSREG = SREG;
+  cc:	8f b7       	in	r24, 0x3f	; 63
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:522
+    cli(); /* INTERRUPTS OFF */
+  ce:	f8 94       	cli
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:524
+    #if defined(MILLIS_USE_TIMERA0)
+      ticks = TCA0.SPLIT.HCNT;
+  d0:	60 91 21 0a 	lds	r22, 0x0A21	; 0x800a21 <digital_pin_to_bit_mask+0x7f8417>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:525
+      flags = TCA0.SPLIT.INTFLAGS;
+  d4:	90 91 0b 0a 	lds	r25, 0x0A0B	; 0x800a0b <digital_pin_to_bit_mask+0x7f8401>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:541
+     * ISR has not fired. If we already read a high value of ticks, either we read it just before the overflow,
+     * so we shouldn't increment overflows, or interrupts are disabled and micros isn't expected to work so it
+     * doesn't matter.
+     * Get current number of overflows and timer count */
+    #if !((defined(MILLIS_USE_TIMERB0) || defined(MILLIS_USE_TIMERB1) || defined(MILLIS_USE_TIMERB2) || defined(MILLIS_USE_TIMERB3) || defined(MILLIS_USE_TIMERB4)))
+      overflows = timingStruct.timer_overflow_count;
+  d8:	20 91 38 3c 	lds	r18, 0x3C38	; 0x803c38 <timingStruct+0x6>
+  dc:	30 91 39 3c 	lds	r19, 0x3C39	; 0x803c39 <timingStruct+0x7>
+  e0:	40 91 3a 3c 	lds	r20, 0x3C3A	; 0x803c3a <timingStruct+0x8>
+  e4:	50 91 3b 3c 	lds	r21, 0x3C3B	; 0x803c3b <timingStruct+0x9>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:546
+    #else
+      overflows = timingStruct.timer_millis;
+    #endif
+    /* Turn interrupts back on, assuming they were on when micros was called. */
+    SREG = oldSREG; /* INTERRUPTS ON */
+  e8:	8f bf       	out	0x3f, r24	; 63
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:550
+    #if defined(MILLIS_USE_TIMERD0)
+      if ((flags & TCD_OVF_bm) && (ticks < 0x07)) {
+    #elif defined(MILLIS_USE_TIMERA0)
+      ticks = (TIME_TRACKING_TIMER_PERIOD) - ticks;
+  ea:	8e ef       	ldi	r24, 0xFE	; 254
+  ec:	86 1b       	sub	r24, r22
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:551
+      if ((flags & TCA_SPLIT_HUNF_bm) && (ticks < 0x04)) {
+  ee:	91 ff       	sbrs	r25, 1
+  f0:	06 c0       	rjmp	.+12     	; 0xfe <micros+0x32>
+  f2:	84 30       	cpi	r24, 0x04	; 4
+  f4:	20 f4       	brcc	.+8      	; 0xfe <micros+0x32>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:558
+      if ((flags & TCB_CAPT_bm) && !(ticks & 0xFF00)) {
+    #endif
+    #if ((defined(MILLIS_USE_TIMERB0) || defined(MILLIS_USE_TIMERB1) || defined(MILLIS_USE_TIMERB2) || defined(MILLIS_USE_TIMERB3) || defined(MILLIS_USE_TIMERB4)) && !(F_CPU > 2000000UL))
+      overflows +=2;
+    #else
+      overflows++;
+  f6:	2f 5f       	subi	r18, 0xFF	; 255
+  f8:	3f 4f       	sbci	r19, 0xFF	; 255
+  fa:	4f 4f       	sbci	r20, 0xFF	; 255
+  fc:	5f 4f       	sbci	r21, 0xFF	; 255
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:896
+      #elif (F_CPU == 10000000UL && TIME_TRACKING_TICKS_PER_OVF == 255 && TIME_TRACKING_TIMER_DIVIDER == 64)
+        microseconds = (overflows * clockCyclesToMicroseconds(TIME_TRACKING_CYCLES_PER_OVF))
+            + ((ticks << 3) - ((uint16_t)(ticks << 1) + (ticks >> 1) - (ticks >> 3)));
+      #elif (F_CPU == 5000000UL && TIME_TRACKING_TICKS_PER_OVF == 255 && TIME_TRACKING_TIMER_DIVIDER == 16)
+        microseconds = (overflows * millisClockCyclesToMicroseconds(TIME_TRACKING_CYCLES_PER_OVF))
+                     + (ticks * 3 + ((uint16_t)(ticks >> 2) - (ticks >> 4)));
+  fe:	93 e0       	ldi	r25, 0x03	; 3
+ 100:	89 9f       	mul	r24, r25
+ 102:	f0 01       	movw	r30, r0
+ 104:	11 24       	eor	r1, r1
+ 106:	98 2f       	mov	r25, r24
+ 108:	92 95       	swap	r25
+ 10a:	9f 70       	andi	r25, 0x0F	; 15
+ 10c:	e9 1b       	sub	r30, r25
+ 10e:	f1 09       	sbc	r31, r1
+ 110:	86 95       	lsr	r24
+ 112:	86 95       	lsr	r24
+ 114:	e8 0f       	add	r30, r24
+ 116:	f1 1d       	adc	r31, r1
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:895
+            + (ticks * 5 + ((uint16_t)(ticks >> 2) + (ticks >> 4) + (ticks >> 5)));
+      #elif (F_CPU == 10000000UL && TIME_TRACKING_TICKS_PER_OVF == 255 && TIME_TRACKING_TIMER_DIVIDER == 64)
+        microseconds = (overflows * clockCyclesToMicroseconds(TIME_TRACKING_CYCLES_PER_OVF))
+            + ((ticks << 3) - ((uint16_t)(ticks << 1) + (ticks >> 1) - (ticks >> 3)));
+      #elif (F_CPU == 5000000UL && TIME_TRACKING_TICKS_PER_OVF == 255 && TIME_TRACKING_TIMER_DIVIDER == 16)
+        microseconds = (overflows * millisClockCyclesToMicroseconds(TIME_TRACKING_CYCLES_PER_OVF))
+ 118:	a0 e3       	ldi	r26, 0x30	; 48
+ 11a:	b3 e0       	ldi	r27, 0x03	; 3
+ 11c:	40 d2       	rcall	.+1152   	; 0x59e <__muluhisi3>
+ 11e:	6e 0f       	add	r22, r30
+ 120:	7f 1f       	adc	r23, r31
+ 122:	81 1d       	adc	r24, r1
+ 124:	91 1d       	adc	r25, r1
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:906
+        microseconds = ((overflows * millisClockCyclesToMicroseconds(TIME_TRACKING_CYCLES_PER_OVF))
+                      + (ticks * (millisClockCyclesToMicroseconds(TIME_TRACKING_CYCLES_PER_OVF) / TIME_TRACKING_TIMER_PERIOD)));
+      #endif
+    #endif // end of timer-specific part of micros calculations
+    return microseconds;
+  }
+ 126:	08 95       	ret
+
+00000128 <delay>:
+delay():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:974
+        _delay_ms(1);
+      }
+    }
+  }
+#elif (PROGMEM_SIZE >= 16384 && !defined(MILLIS_USE_TIMERRTC))
+  void delay(uint32_t ms) { /* Interrupts will not prolong this less flash-efficient delay */
+ 128:	cf 92       	push	r12
+ 12a:	df 92       	push	r13
+ 12c:	ef 92       	push	r14
+ 12e:	ff 92       	push	r15
+ 130:	cf 93       	push	r28
+ 132:	df 93       	push	r29
+ 134:	6b 01       	movw	r12, r22
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:975
+    uint16_t start = (uint16_t) micros();
+ 136:	7c 01       	movw	r14, r24
+ 138:	c9 df       	rcall	.-110    	; 0xcc <micros>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:977
+    while (ms > 0) {
+      while (((uint16_t) micros() - start) >= 1000 && ms) {
+ 13a:	eb 01       	movw	r28, r22
+ 13c:	c7 df       	rcall	.-114    	; 0xcc <micros>
+ 13e:	6c 1b       	sub	r22, r28
+ 140:	7d 0b       	sbc	r23, r29
+ 142:	68 3e       	cpi	r22, 0xE8	; 232
+ 144:	73 40       	sbci	r23, 0x03	; 3
+ 146:	a0 f0       	brcs	.+40     	; 0x170 <delay+0x48>
+ 148:	c1 14       	cp	r12, r1
+ 14a:	d1 04       	cpc	r13, r1
+ 14c:	e1 04       	cpc	r14, r1
+ 14e:	f1 04       	cpc	r15, r1
+ 150:	39 f4       	brne	.+14     	; 0x160 <delay+0x38>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:982
+        ms-- ;
+        start += 1000;
+      }
+    }
+  }
+ 152:	df 91       	pop	r29
+ 154:	cf 91       	pop	r28
+ 156:	ff 90       	pop	r15
+ 158:	ef 90       	pop	r14
+ 15a:	df 90       	pop	r13
+ 15c:	cf 90       	pop	r12
+ 15e:	08 95       	ret
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:978
+#elif (PROGMEM_SIZE >= 16384 && !defined(MILLIS_USE_TIMERRTC))
+  void delay(uint32_t ms) { /* Interrupts will not prolong this less flash-efficient delay */
+    uint16_t start = (uint16_t) micros();
+    while (ms > 0) {
+      while (((uint16_t) micros() - start) >= 1000 && ms) {
+        ms-- ;
+ 160:	81 e0       	ldi	r24, 0x01	; 1
+ 162:	c8 1a       	sub	r12, r24
+ 164:	d1 08       	sbc	r13, r1
+ 166:	e1 08       	sbc	r14, r1
+ 168:	f1 08       	sbc	r15, r1
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:979
+        start += 1000;
+ 16a:	c8 51       	subi	r28, 0x18	; 24
+ 16c:	dc 4f       	sbci	r29, 0xFC	; 252
+ 16e:	e6 cf       	rjmp	.-52     	; 0x13c <delay+0x14>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:976
+    }
+  }
+#elif (PROGMEM_SIZE >= 16384 && !defined(MILLIS_USE_TIMERRTC))
+  void delay(uint32_t ms) { /* Interrupts will not prolong this less flash-efficient delay */
+    uint16_t start = (uint16_t) micros();
+    while (ms > 0) {
+ 170:	c1 14       	cp	r12, r1
+ 172:	d1 04       	cpc	r13, r1
+ 174:	e1 04       	cpc	r14, r1
+ 176:	f1 04       	cpc	r15, r1
+ 178:	09 f7       	brne	.-62     	; 0x13c <delay+0x14>
+ 17a:	eb cf       	rjmp	.-42     	; 0x152 <delay+0x2a>
+
+0000017c <digitalRead>:
+digitalRead():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/Arduino.h:814
+#if !defined(NUM_TOTAL_PINS)
+  #define NUM_TOTAL_PINS                (NUM_DIGITAL_PINS) /* Used the same way as NUM_DIGITAL_PINS. so it doesn't mean what it's named  - I didn't make the convention*/
+#endif
+
+inline __attribute__((always_inline)) void check_valid_digital_pin(pin_size_t pin) {
+  if (__builtin_constant_p(pin)) {
+ 17c:	28 2f       	mov	r18, r24
+ 17e:	30 e0       	ldi	r19, 0x00	; 0
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:354
+}
+
+int8_t digitalRead(uint8_t pin) {
+  check_valid_digital_pin(pin);
+  /* Get bit mask and check valid pin */
+  uint8_t bit_mask = digitalPinToBitMask(pin);
+ 180:	82 31       	cpi	r24, 0x12	; 18
+ 182:	a8 f4       	brcc	.+42     	; 0x1ae <digitalRead+0x32>
+ 184:	f9 01       	movw	r30, r18
+ 186:	e6 5f       	subi	r30, 0xF6	; 246
+ 188:	f9 47       	sbci	r31, 0x79	; 121
+ 18a:	80 81       	ld	r24, Z
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:355
+  if (bit_mask == NOT_A_PIN) {
+ 18c:	8f 3f       	cpi	r24, 0xFF	; 255
+ 18e:	79 f0       	breq	.+30     	; 0x1ae <digitalRead+0x32>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:368
+  // high bar for stuff that would make it even slower than it already is.
+  //
+  // turnOffPWM(pin);
+
+  /* Get port and check valid port */
+  PORT_t *port = digitalPinToPortStruct(pin);
+ 190:	28 50       	subi	r18, 0x08	; 8
+ 192:	3a 47       	sbci	r19, 0x7A	; 122
+ 194:	d9 01       	movw	r26, r18
+ 196:	ec 91       	ld	r30, X
+ 198:	b0 e2       	ldi	r27, 0x20	; 32
+ 19a:	eb 9f       	mul	r30, r27
+ 19c:	f0 01       	movw	r30, r0
+ 19e:	11 24       	eor	r1, r1
+ 1a0:	fc 5f       	subi	r31, 0xFC	; 252
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:371
+
+  /* Read pin value from PORTx.IN register */
+  if (port->IN & bit_mask) {
+ 1a2:	90 85       	ldd	r25, Z+8	; 0x08
+ 1a4:	98 23       	and	r25, r24
+ 1a6:	81 e0       	ldi	r24, 0x01	; 1
+ 1a8:	19 f4       	brne	.+6      	; 0x1b0 <digitalRead+0x34>
+ 1aa:	80 e0       	ldi	r24, 0x00	; 0
+ 1ac:	08 95       	ret
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:356
+int8_t digitalRead(uint8_t pin) {
+  check_valid_digital_pin(pin);
+  /* Get bit mask and check valid pin */
+  uint8_t bit_mask = digitalPinToBitMask(pin);
+  if (bit_mask == NOT_A_PIN) {
+    return -1;
+ 1ae:	8f ef       	ldi	r24, 0xFF	; 255
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:376
+  if (port->IN & bit_mask) {
+    return HIGH;
+  } else {
+    return LOW;
+  }
+}
+ 1b0:	08 95       	ret
+
+000001b2 <digitalWrite>:
+digitalWrite():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:240
+    default:
+      break;
+  }
+}
+
+void digitalWrite(uint8_t pin, uint8_t val) {
+ 1b2:	cf 93       	push	r28
+ 1b4:	df 93       	push	r29
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:243
+  check_valid_digital_pin(pin);
+  /* Get bit mask for pin */
+  uint8_t bit_mask = digitalPinToBitMask(pin);
+ 1b6:	82 31       	cpi	r24, 0x12	; 18
+ 1b8:	08 f0       	brcs	.+2      	; 0x1bc <digitalWrite+0xa>
+ 1ba:	43 c0       	rjmp	.+134    	; 0x242 <digitalWrite+0x90>
+check_valid_digital_pin():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/Arduino.h:814
+ 1bc:	90 e0       	ldi	r25, 0x00	; 0
+digitalWrite():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:243
+ 1be:	ec 01       	movw	r28, r24
+ 1c0:	c6 5f       	subi	r28, 0xF6	; 246
+ 1c2:	d9 47       	sbci	r29, 0x79	; 121
+ 1c4:	28 81       	ld	r18, Y
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:244
+  if (bit_mask == NOT_A_PIN) {
+ 1c6:	2f 3f       	cpi	r18, 0xFF	; 255
+ 1c8:	09 f4       	brne	.+2      	; 0x1cc <digitalWrite+0x1a>
+ 1ca:	3b c0       	rjmp	.+118    	; 0x242 <digitalWrite+0x90>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:249
+    return;
+  }
+
+  /* Get port */
+  PORT_t *port = digitalPinToPortStruct(pin);
+ 1cc:	ac 01       	movw	r20, r24
+ 1ce:	48 50       	subi	r20, 0x08	; 8
+ 1d0:	5a 47       	sbci	r21, 0x7A	; 122
+ 1d2:	da 01       	movw	r26, r20
+ 1d4:	ec 91       	ld	r30, X
+ 1d6:	b0 e2       	ldi	r27, 0x20	; 32
+ 1d8:	eb 9f       	mul	r30, r27
+ 1da:	f0 01       	movw	r30, r0
+ 1dc:	11 24       	eor	r1, r1
+ 1de:	fc 5f       	subi	r31, 0xFC	; 252
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:257
+  the behavior of digitalWrite() on classic AVR devices, where
+  you could digitalWrite() a pin while it's an input, to ensure
+  that the value of the port was set correctly when it was
+  changed to an output. Code in the wild relies on this behavior. */
+
+  if (val == LOW) { /* If LOW */
+ 1e0:	61 11       	cpse	r22, r1
+ 1e2:	32 c0       	rjmp	.+100    	; 0x248 <digitalWrite+0x96>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:258
+    port->OUTCLR = bit_mask;
+ 1e4:	26 83       	std	Z+6, r18	; 0x06
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:282
+  } else {
+    port->OUTSET = bit_mask;
+  }
+
+  /* Input direction */
+  if (!(port->DIR & bit_mask)) {
+ 1e6:	30 81       	ld	r19, Z
+ 1e8:	23 23       	and	r18, r19
+ 1ea:	a1 f4       	brne	.+40     	; 0x214 <digitalWrite+0x62>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:289
+      pull up is enabled if this function is called.
+      Should we purposely implement this side effect?
+    */
+
+    /* Get bit position for getting pin ctrl reg */
+    uint8_t bit_pos = digitalPinToBitPosition(pin);
+ 1ec:	9c 01       	movw	r18, r24
+ 1ee:	2a 51       	subi	r18, 0x1A	; 26
+ 1f0:	3a 47       	sbci	r19, 0x7A	; 122
+ 1f2:	d9 01       	movw	r26, r18
+ 1f4:	2c 91       	ld	r18, X
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:292
+
+    /* Calculate where pin control register is */
+    volatile uint8_t *pin_ctrl_reg = getPINnCTRLregister(port, bit_pos);
+ 1f6:	30 97       	sbiw	r30, 0x00	; 0
+ 1f8:	49 f1       	breq	.+82     	; 0x24c <digitalWrite+0x9a>
+ 1fa:	28 30       	cpi	r18, 0x08	; 8
+ 1fc:	38 f5       	brcc	.+78     	; 0x24c <digitalWrite+0x9a>
+ 1fe:	70 96       	adiw	r30, 0x10	; 16
+ 200:	e2 0f       	add	r30, r18
+ 202:	f1 1d       	adc	r31, r1
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:295
+
+    /* Save system status and disable interrupts */
+    uint8_t status = SREG;
+ 204:	3f b7       	in	r19, 0x3f	; 63
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:296
+    cli();
+ 206:	f8 94       	cli
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:300
+
+    if (val == LOW) {
+      /* Disable pullup */
+      *pin_ctrl_reg &= ~PORT_PULLUPEN_bm;
+ 208:	20 81       	ld	r18, Z
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:298
+
+    /* Save system status and disable interrupts */
+    uint8_t status = SREG;
+    cli();
+
+    if (val == LOW) {
+ 20a:	61 11       	cpse	r22, r1
+ 20c:	22 c0       	rjmp	.+68     	; 0x252 <digitalWrite+0xa0>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:300
+      /* Disable pullup */
+      *pin_ctrl_reg &= ~PORT_PULLUPEN_bm;
+ 20e:	27 7f       	andi	r18, 0xF7	; 247
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:303
+    } else {
+      /* Enable pull-up */
+      *pin_ctrl_reg |= PORT_PULLUPEN_bm;
+ 210:	20 83       	st	Z, r18
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:307
+    }
+
+    /* Restore system status */
+    SREG = status;
+ 212:	3f bf       	out	0x3f, r19	; 63
+turnOffPWM():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:107
+   * any timers with minimum overhead - critical on these parts
+   * Since nothing that will show up here can have more than one
+   * one bit set, binary and will give 0x00 if that bit is cleared
+   * which is NOT_ON_TIMER.
+   */
+  uint8_t digital_pin_timer =  digitalPinToTimer(pin) & __PeripheralControl;
+ 214:	8c 52       	subi	r24, 0x2C	; 44
+ 216:	9a 47       	sbci	r25, 0x7A	; 122
+ 218:	fc 01       	movw	r30, r24
+ 21a:	80 81       	ld	r24, Z
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:109
+  /* end megaTinyCore-specific section */
+  if (digital_pin_timer== NOT_ON_TIMER) {
+ 21c:	88 23       	and	r24, r24
+ 21e:	89 f0       	breq	.+34     	; 0x242 <digitalWrite+0x90>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:116
+  }
+
+  uint8_t bit_mask = digitalPinToBitMask(pin);
+  // TCB_t *timerB;
+
+  switch (digital_pin_timer) {
+ 220:	80 31       	cpi	r24, 0x10	; 16
+ 222:	79 f4       	brne	.+30     	; 0x242 <digitalWrite+0x90>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:113
+  /* end megaTinyCore-specific section */
+  if (digital_pin_timer== NOT_ON_TIMER) {
+    return;
+  }
+
+  uint8_t bit_mask = digitalPinToBitMask(pin);
+ 224:	88 81       	ld	r24, Y
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:132
+          }
+          if (bit_mask > 0x04) {  // -> bit_pos > 2 -> output channel controlled by HCMP
+            bit_mask <<= 1;       // mind the gap (between LCMP and HCMP)
+          }
+        #else
+          if (digitalPinToPort(pin) == PB) {        // WO0-WO2, Bitmask has one of these bits 1: 0b00hhhlll.
+ 226:	da 01       	movw	r26, r20
+ 228:	9c 91       	ld	r25, X
+ 22a:	91 30       	cpi	r25, 0x01	; 1
+ 22c:	a1 f4       	brne	.+40     	; 0x256 <digitalWrite+0xa4>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:133
+            if (bit_mask > 0x04) { // Is it one of the three high ones? If so
+ 22e:	85 30       	cpi	r24, 0x05	; 5
+ 230:	10 f0       	brcs	.+4      	; 0x236 <digitalWrite+0x84>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:134
+              bit_mask <<= 1;      // nudge it 1 place left swap nybbles since that's 1 clock faster than 3 rightshifts.
+ 232:	88 0f       	add	r24, r24
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:135
+              _SWAP(bit_mask);     // swap nybbles since that's 1 clock faster than 3 rightshifts.
+ 234:	82 95       	swap	r24
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:142
+          } else {
+            // Otherwise, it's WO3-5. These will always be on 0b00hhh000,. Here since we ARE working with a high half timer, we need to just leftshift it once.
+            bit_mask <<= 1;
+          }
+        #endif
+        TCA0.SPLIT.CTRLB &= ~bit_mask;
+ 236:	90 91 01 0a 	lds	r25, 0x0A01	; 0x800a01 <digital_pin_to_bit_mask+0x7f83f7>
+ 23a:	80 95       	com	r24
+ 23c:	89 23       	and	r24, r25
+ 23e:	80 93 01 0a 	sts	0x0A01, r24	; 0x800a01 <digital_pin_to_bit_mask+0x7f83f7>
+digitalWrite():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:320
+   * analogWritten() 255, then digitallyWritten() to HIGH, which
+   * would turn it off for the time between turnOffPWM() and
+   * PORT->OUTCLR)
+   * Since there's no penalty, why make a glitch we don't have to? */
+  turnOffPWM(pin);
+}
+ 242:	df 91       	pop	r29
+ 244:	cf 91       	pop	r28
+ 246:	08 95       	ret
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:278
+    // val will now be 0 (LOW) if the toggling made it LOW
+    // or bit_mask if not. And further down, we only need to
+    // know if it's
+  /* If HIGH OR  > TOGGLE  */
+  } else {
+    port->OUTSET = bit_mask;
+ 248:	25 83       	std	Z+5, r18	; 0x05
+ 24a:	cd cf       	rjmp	.-102    	; 0x1e6 <digitalWrite+0x34>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:292
+
+    /* Get bit position for getting pin ctrl reg */
+    uint8_t bit_pos = digitalPinToBitPosition(pin);
+
+    /* Calculate where pin control register is */
+    volatile uint8_t *pin_ctrl_reg = getPINnCTRLregister(port, bit_pos);
+ 24c:	f0 e0       	ldi	r31, 0x00	; 0
+ 24e:	e0 e0       	ldi	r30, 0x00	; 0
+ 250:	d9 cf       	rjmp	.-78     	; 0x204 <digitalWrite+0x52>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:303
+    if (val == LOW) {
+      /* Disable pullup */
+      *pin_ctrl_reg &= ~PORT_PULLUPEN_bm;
+    } else {
+      /* Enable pull-up */
+      *pin_ctrl_reg |= PORT_PULLUPEN_bm;
+ 252:	28 60       	ori	r18, 0x08	; 8
+ 254:	dd cf       	rjmp	.-70     	; 0x210 <digitalWrite+0x5e>
+turnOffPWM():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:139
+              bit_mask <<= 1;      // nudge it 1 place left swap nybbles since that's 1 clock faster than 3 rightshifts.
+              _SWAP(bit_mask);     // swap nybbles since that's 1 clock faster than 3 rightshifts.
+            }
+          } else {
+            // Otherwise, it's WO3-5. These will always be on 0b00hhh000,. Here since we ARE working with a high half timer, we need to just leftshift it once.
+            bit_mask <<= 1;
+ 256:	88 0f       	add	r24, r24
+ 258:	ee cf       	rjmp	.-36     	; 0x236 <digitalWrite+0x84>
+
+0000025a <pinMode>:
+pinMode():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:44
+}
+
+void pinMode(uint8_t pin, uint8_t mode) {
+  check_valid_digital_pin(pin);         /* generate compile error if a constant that is not a valid pin is used as the pin */
+  check_valid_pin_mode(mode);           /* generate compile error if a constant that is not a valid pin mode is used as the mode */
+  uint8_t bit_mask = digitalPinToBitMask(pin);
+ 25a:	82 31       	cpi	r24, 0x12	; 18
+ 25c:	f0 f4       	brcc	.+60     	; 0x29a <pinMode+0x40>
+check_valid_digital_pin():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/Arduino.h:814
+ 25e:	90 e0       	ldi	r25, 0x00	; 0
+pinMode():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:44
+ 260:	fc 01       	movw	r30, r24
+ 262:	e6 5f       	subi	r30, 0xF6	; 246
+ 264:	f9 47       	sbci	r31, 0x79	; 121
+ 266:	20 81       	ld	r18, Z
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:45
+  if ((bit_mask == NOT_A_PIN) || (mode > INPUT_PULLUP)) {
+ 268:	2f 3f       	cpi	r18, 0xFF	; 255
+ 26a:	b9 f0       	breq	.+46     	; 0x29a <pinMode+0x40>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:48
+    return;                             /* ignore invalid pins passed at runtime */
+  }
+  volatile uint8_t * port_base = (volatile uint8_t *) (uint16_t) ((&PORTA) + digitalPinToPort(pin));
+ 26c:	fc 01       	movw	r30, r24
+ 26e:	e8 50       	subi	r30, 0x08	; 8
+ 270:	fa 47       	sbci	r31, 0x7A	; 122
+ 272:	e0 81       	ld	r30, Z
+ 274:	30 e2       	ldi	r19, 0x20	; 32
+ 276:	e3 9f       	mul	r30, r19
+ 278:	f0 01       	movw	r30, r0
+ 27a:	11 24       	eor	r1, r1
+ 27c:	fc 5f       	subi	r31, 0xFC	; 252
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:49
+  if (mode & 0x01) {
+ 27e:	60 ff       	sbrs	r22, 0
+ 280:	0d c0       	rjmp	.+26     	; 0x29c <pinMode+0x42>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:51
+    // OUTPUT mode, so write DIRSET with the mask.
+    *(port_base + 1) = bit_mask;
+ 282:	21 83       	std	Z+1, r18	; 0x01
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:77
+  // then load with displacement 2 clocks. IFF the compiler puts this pointer into Y or Z, it is faster and smaller
+  // by 2 bytes and one clock. And let's hope it is, because the code above would suck too if it was in X.
+  // Handwritten assembly that exploited the knowledge that there will never be a carry would save 1 word and 1 clock.
+  // and could probably save at least several times that in initializing the port_base pointer. But if you're using
+  // pinMode you probably don't care.
+  port_base += (uint8_t) digitalPinToBitPosition(pin);
+ 284:	8a 51       	subi	r24, 0x1A	; 26
+ 286:	9a 47       	sbci	r25, 0x7A	; 122
+ 288:	dc 01       	movw	r26, r24
+ 28a:	8c 91       	ld	r24, X
+ 28c:	e8 0f       	add	r30, r24
+ 28e:	f1 1d       	adc	r31, r1
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:78
+  bit_mask = *(port_base + 0x10);
+ 290:	80 89       	ldd	r24, Z+16	; 0x10
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:79
+  if (mode & 2) {
+ 292:	61 ff       	sbrs	r22, 1
+ 294:	05 c0       	rjmp	.+10     	; 0x2a0 <pinMode+0x46>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:80
+    bit_mask |= 0x08;
+ 296:	88 60       	ori	r24, 0x08	; 8
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:84
+  } else {
+    bit_mask &= 0xF7;
+  }
+  *(port_base + 0x10) = bit_mask;
+ 298:	80 8b       	std	Z+16, r24	; 0x10
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:85
+}
+ 29a:	08 95       	ret
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:53
+  volatile uint8_t * port_base = (volatile uint8_t *) (uint16_t) ((&PORTA) + digitalPinToPort(pin));
+  if (mode & 0x01) {
+    // OUTPUT mode, so write DIRSET with the mask.
+    *(port_base + 1) = bit_mask;
+  } else { // otherwise it's input so we write DIRCLR
+    *(port_base + 2) = bit_mask;
+ 29c:	22 83       	std	Z+2, r18	; 0x02
+ 29e:	f2 cf       	rjmp	.-28     	; 0x284 <pinMode+0x2a>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring_digital.c:82
+  port_base += (uint8_t) digitalPinToBitPosition(pin);
+  bit_mask = *(port_base + 0x10);
+  if (mode & 2) {
+    bit_mask |= 0x08;
+  } else {
+    bit_mask &= 0xF7;
+ 2a0:	87 7f       	andi	r24, 0xF7	; 247
+ 2a2:	fa cf       	rjmp	.-12     	; 0x298 <pinMode+0x3e>
+
+000002a4 <__vector_9>:
+__vector_9():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:200
+      }
+      RTC.INTFLAGS = RTC_OVF_bm | RTC_CMP_bm; // clear flag
+    }
+  #else
+    ISR(MILLIS_TIMER_VECTOR, ISR_NAKED) {
+      __asm__ __volatile__(
+ 2a4:	ef 93       	push	r30
+ 2a6:	ff 93       	push	r31
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:294
+          #endif
+          _timer->INTFLAGS = TCB_CAPT_bm;   // reset Interrupt flag of TCBx
+        }
+      */
+    #else // TCA0 or TCD0, also naked
+      __asm__ __volatile__(
+ 2a8:	e2 e3       	ldi	r30, 0x32	; 50
+ 2aa:	fc e3       	ldi	r31, 0x3C	; 60
+ 2ac:	8f 93       	push	r24
+ 2ae:	8f b7       	in	r24, 0x3f	; 63
+ 2b0:	8f 93       	push	r24
+ 2b2:	9f 93       	push	r25
+ 2b4:	7f 93       	push	r23
+ 2b6:	70 e0       	ldi	r23, 0x00	; 0
+ 2b8:	80 81       	ld	r24, Z
+ 2ba:	91 81       	ldd	r25, Z+1	; 0x01
+ 2bc:	80 5d       	subi	r24, 0xD0	; 208
+ 2be:	9c 4f       	sbci	r25, 0xFC	; 252
+ 2c0:	80 83       	st	Z, r24
+ 2c2:	91 83       	std	Z+1, r25	; 0x01
+ 2c4:	88 5e       	subi	r24, 0xE8	; 232
+ 2c6:	93 40       	sbci	r25, 0x03	; 3
+ 2c8:	18 f0       	brcs	.+6      	; 0x2d0 <lower>
+ 2ca:	80 83       	st	Z, r24
+ 2cc:	91 83       	std	Z+1, r25	; 0x01
+ 2ce:	7f 5f       	subi	r23, 0xFF	; 255
+
+000002d0 <lower>:
+ 2d0:	92 81       	ldd	r25, Z+2	; 0x02
+ 2d2:	97 0f       	add	r25, r23
+ 2d4:	92 83       	std	Z+2, r25	; 0x02
+ 2d6:	80 e0       	ldi	r24, 0x00	; 0
+ 2d8:	93 81       	ldd	r25, Z+3	; 0x03
+ 2da:	98 1f       	adc	r25, r24
+ 2dc:	93 83       	std	Z+3, r25	; 0x03
+ 2de:	94 81       	ldd	r25, Z+4	; 0x04
+ 2e0:	98 1f       	adc	r25, r24
+ 2e2:	94 83       	std	Z+4, r25	; 0x04
+ 2e4:	95 81       	ldd	r25, Z+5	; 0x05
+ 2e6:	98 1f       	adc	r25, r24
+ 2e8:	95 83       	std	Z+5, r25	; 0x05
+ 2ea:	96 81       	ldd	r25, Z+6	; 0x06
+ 2ec:	9f 5f       	subi	r25, 0xFF	; 255
+ 2ee:	96 83       	std	Z+6, r25	; 0x06
+ 2f0:	97 81       	ldd	r25, Z+7	; 0x07
+ 2f2:	9f 4f       	sbci	r25, 0xFF	; 255
+ 2f4:	97 83       	std	Z+7, r25	; 0x07
+ 2f6:	90 85       	ldd	r25, Z+8	; 0x08
+ 2f8:	9f 4f       	sbci	r25, 0xFF	; 255
+ 2fa:	90 87       	std	Z+8, r25	; 0x08
+ 2fc:	91 85       	ldd	r25, Z+9	; 0x09
+ 2fe:	9f 4f       	sbci	r25, 0xFF	; 255
+ 300:	91 87       	std	Z+9, r25	; 0x09
+ 302:	82 e0       	ldi	r24, 0x02	; 2
+ 304:	80 93 0b 0a 	sts	0x0A0B, r24	; 0x800a0b <digital_pin_to_bit_mask+0x7f8401>
+ 308:	7f 91       	pop	r23
+ 30a:	9f 91       	pop	r25
+ 30c:	8f 91       	pop	r24
+ 30e:	8f bf       	out	0x3f, r24	; 63
+ 310:	8f 91       	pop	r24
+ 312:	ff 91       	pop	r31
+ 314:	ef 91       	pop	r30
+ 316:	18 95       	reti
+
+00000318 <__vector_7>:
+__vector_7():
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:129
+      leds[i].timer = 0;
+    }
+  }
+}
+
+ISR(RTC_PIT_vect) {
+ 318:	1f 92       	push	r1
+ 31a:	0f 92       	push	r0
+ 31c:	0f b6       	in	r0, 0x3f	; 63
+ 31e:	0f 92       	push	r0
+ 320:	11 24       	eor	r1, r1
+ 322:	2f 93       	push	r18
+ 324:	3f 93       	push	r19
+ 326:	4f 93       	push	r20
+ 328:	8f 93       	push	r24
+ 32a:	9f 93       	push	r25
+ 32c:	af 93       	push	r26
+ 32e:	bf 93       	push	r27
+ 330:	ef 93       	push	r30
+ 332:	ff 93       	push	r31
+ 334:	cf 93       	push	r28
+ 336:	df 93       	push	r29
+ 338:	cd b7       	in	r28, 0x3d	; 61
+ 33a:	de b7       	in	r29, 0x3e	; 62
+ 33c:	26 97       	sbiw	r28, 0x06	; 6
+ 33e:	cd bf       	out	0x3d, r28	; 61
+ 340:	de bf       	out	0x3e, r29	; 62
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:130
+  cli();
+ 342:	f8 94       	cli
+tickHandler():
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:101
+
+
+void tickHandler() {
+
+  bool conditions[NUM_OF_LEDSTRIPS] = {
+    LED_CONDITIONS
+ 344:	80 91 04 3c 	lds	r24, 0x3C04	; 0x803c04 <__DATA_REGION_ORIGIN__+0x4>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:102
+  };
+ 348:	89 83       	std	Y+1, r24	; 0x01
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:101
+
+
+void tickHandler() {
+
+  bool conditions[NUM_OF_LEDSTRIPS] = {
+    LED_CONDITIONS
+ 34a:	81 11       	cpse	r24, r1
+ 34c:	80 91 09 3c 	lds	r24, 0x3C09	; 0x803c09 <__DATA_REGION_ORIGIN__+0x9>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:102
+  };
+ 350:	8a 83       	std	Y+2, r24	; 0x02
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:101
+
+
+void tickHandler() {
+
+  bool conditions[NUM_OF_LEDSTRIPS] = {
+    LED_CONDITIONS
+ 352:	90 91 0e 3c 	lds	r25, 0x3C0E	; 0x803c0e <__DATA_REGION_ORIGIN__+0xe>
+ 356:	81 e0       	ldi	r24, 0x01	; 1
+ 358:	98 27       	eor	r25, r24
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:102
+  };
+ 35a:	9b 83       	std	Y+3, r25	; 0x03
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:101
+
+
+void tickHandler() {
+
+  bool conditions[NUM_OF_LEDSTRIPS] = {
+    LED_CONDITIONS
+ 35c:	90 91 13 3c 	lds	r25, 0x3C13	; 0x803c13 <__DATA_REGION_ORIGIN__+0x13>
+ 360:	89 27       	eor	r24, r25
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:102
+  };
+ 362:	8c 83       	std	Y+4, r24	; 0x04
+ 364:	9d 83       	std	Y+5, r25	; 0x05
+ 366:	9e 83       	std	Y+6, r25	; 0x06
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:105
+
+  // handle all_leds_when_any_sensor
+  if (all_leds_when_any_sensor) {
+ 368:	80 91 30 3c 	lds	r24, 0x3C30	; 0x803c30 <__data_end>
+ 36c:	88 23       	and	r24, r24
+ 36e:	89 f0       	breq	.+34     	; 0x392 <__vector_7+0x7a>
+ 370:	ee e1       	ldi	r30, 0x1E	; 30
+ 372:	fc e3       	ldi	r31, 0x3C	; 60
+ 374:	20 e3       	ldi	r18, 0x30	; 48
+ 376:	3c e3       	ldi	r19, 0x3C	; 60
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:108
+    bool any = false;
+    for (size_t i=0; i < NUM_OF_SENSORS; i++) {
+      if (sensors[i].state) {
+ 378:	82 81       	ldd	r24, Z+2	; 0x02
+ 37a:	81 11       	cpse	r24, r1
+ 37c:	04 c0       	rjmp	.+8      	; 0x386 <__vector_7+0x6e>
+ 37e:	33 96       	adiw	r30, 0x03	; 3
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:107
+  };
+
+  // handle all_leds_when_any_sensor
+  if (all_leds_when_any_sensor) {
+    bool any = false;
+    for (size_t i=0; i < NUM_OF_SENSORS; i++) {
+ 380:	2e 17       	cp	r18, r30
+ 382:	3f 07       	cpc	r19, r31
+ 384:	c9 f7       	brne	.-14     	; 0x378 <__vector_7+0x60>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:115
+        break;
+      }
+    }
+
+    for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+      conditions[i] = any;
+ 386:	89 83       	std	Y+1, r24	; 0x01
+ 388:	8a 83       	std	Y+2, r24	; 0x02
+ 38a:	8b 83       	std	Y+3, r24	; 0x03
+ 38c:	8c 83       	std	Y+4, r24	; 0x04
+ 38e:	8d 83       	std	Y+5, r24	; 0x05
+ 390:	8e 83       	std	Y+6, r24	; 0x06
+ 392:	de 01       	movw	r26, r28
+ 394:	11 96       	adiw	r26, 0x01	; 1
+__vector_7():
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:129
+      leds[i].timer = 0;
+    }
+  }
+}
+
+ISR(RTC_PIT_vect) {
+ 396:	90 e0       	ldi	r25, 0x00	; 0
+ 398:	80 e0       	ldi	r24, 0x00	; 0
+tickHandler():
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:124
+  // tick timer when condition is true
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+    if (conditions[i]) {
+      leds[i].timer++;
+    } else {
+      leds[i].timer = 0;
+ 39a:	45 e0       	ldi	r20, 0x05	; 5
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:121
+    }
+  }
+
+  // tick timer when condition is true
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+    if (conditions[i]) {
+ 39c:	2d 91       	ld	r18, X+
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:122
+      leds[i].timer++;
+ 39e:	48 9f       	mul	r20, r24
+ 3a0:	f0 01       	movw	r30, r0
+ 3a2:	49 9f       	mul	r20, r25
+ 3a4:	f0 0d       	add	r31, r0
+ 3a6:	11 24       	eor	r1, r1
+ 3a8:	e0 50       	subi	r30, 0x00	; 0
+ 3aa:	f4 4c       	sbci	r31, 0xC4	; 196
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:121
+    }
+  }
+
+  // tick timer when condition is true
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+    if (conditions[i]) {
+ 3ac:	22 23       	and	r18, r18
+ 3ae:	09 f1       	breq	.+66     	; 0x3f2 <__vector_7+0xda>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:122
+      leds[i].timer++;
+ 3b0:	22 81       	ldd	r18, Z+2	; 0x02
+ 3b2:	33 81       	ldd	r19, Z+3	; 0x03
+ 3b4:	2f 5f       	subi	r18, 0xFF	; 255
+ 3b6:	3f 4f       	sbci	r19, 0xFF	; 255
+ 3b8:	22 83       	std	Z+2, r18	; 0x02
+ 3ba:	33 83       	std	Z+3, r19	; 0x03
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:120
+      conditions[i] = any;
+    }
+  }
+
+  // tick timer when condition is true
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+ 3bc:	01 96       	adiw	r24, 0x01	; 1
+ 3be:	86 30       	cpi	r24, 0x06	; 6
+ 3c0:	91 05       	cpc	r25, r1
+ 3c2:	61 f7       	brne	.-40     	; 0x39c <__vector_7+0x84>
+__vector_7():
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:135
+  cli();
+
+  tickHandler();
+
+  // reset RTC interrupt
+  RTC_PITINTFLAGS = 1;
+ 3c4:	81 e0       	ldi	r24, 0x01	; 1
+ 3c6:	80 93 53 01 	sts	0x0153, r24	; 0x800153 <digital_pin_to_bit_mask+0x7f7b49>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:136
+  sei();
+ 3ca:	78 94       	sei
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:137
+}
+ 3cc:	26 96       	adiw	r28, 0x06	; 6
+ 3ce:	cd bf       	out	0x3d, r28	; 61
+ 3d0:	de bf       	out	0x3e, r29	; 62
+ 3d2:	df 91       	pop	r29
+ 3d4:	cf 91       	pop	r28
+ 3d6:	ff 91       	pop	r31
+ 3d8:	ef 91       	pop	r30
+ 3da:	bf 91       	pop	r27
+ 3dc:	af 91       	pop	r26
+ 3de:	9f 91       	pop	r25
+ 3e0:	8f 91       	pop	r24
+ 3e2:	4f 91       	pop	r20
+ 3e4:	3f 91       	pop	r19
+ 3e6:	2f 91       	pop	r18
+ 3e8:	0f 90       	pop	r0
+ 3ea:	0f be       	out	0x3f, r0	; 63
+ 3ec:	0f 90       	pop	r0
+ 3ee:	1f 90       	pop	r1
+ 3f0:	18 95       	reti
+tickHandler():
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:124
+  // tick timer when condition is true
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+    if (conditions[i]) {
+      leds[i].timer++;
+    } else {
+      leds[i].timer = 0;
+ 3f2:	12 82       	std	Z+2, r1	; 0x02
+ 3f4:	13 82       	std	Z+3, r1	; 0x03
+ 3f6:	e2 cf       	rjmp	.-60     	; 0x3bc <__vector_7+0xa4>
+
+000003f8 <main>:
+main():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:1561
+      #elif (F_CPU == 8000000) // 16MHz prescaled by 2
+        /* Clock DIV2 */
+        _PROTECTED_WRITE(CLKCTRL_MCLKCTRLB, (CLKCTRL_PEN_bm | CLKCTRL_PDIV_2X_gc));
+      #elif (F_CPU == 5000000) // 20MHz prescaled by 4
+        /* Clock DIV4 */
+        _PROTECTED_WRITE(CLKCTRL_MCLKCTRLB, (CLKCTRL_PEN_bm | CLKCTRL_PDIV_4X_gc));
+ 3f8:	88 ed       	ldi	r24, 0xD8	; 216
+ 3fa:	93 e0       	ldi	r25, 0x03	; 3
+ 3fc:	84 bf       	out	0x34, r24	; 52
+ 3fe:	90 93 61 00 	sts	0x0061, r25	; 0x800061 <digital_pin_to_bit_mask+0x7f7a57>
+init_ADC0():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:1664
+
+
+/********************************* ADC ****************************************/
+void __attribute__((weak)) init_ADC0() {
+  ADC_t* pADC;
+  _fastPtr_d(pADC, &ADC0);
+ 402:	e0 e0       	ldi	r30, 0x00	; 0
+ 404:	f6 e0       	ldi	r31, 0x06	; 6
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:1689
+    #elif F_CPU  >= 12000000    // 16 MHz / 16 = 1.0 MHz,  20 MHz / 16 = 1.25 MHz
+      pADC->CTRLC  = ADC_PRESC_DIV16_gc | ADC_REFSEL_VDDREF_gc | ADC_SAMPCAP_bm;
+    #elif F_CPU  >=  6000000    //  8 MHz /  8 = 1.0 MHz,  10 MHz /  8 = 1.25 MHz
+      pADC->CTRLC  =  ADC_PRESC_DIV8_gc | ADC_REFSEL_VDDREF_gc | ADC_SAMPCAP_bm;
+    #elif F_CPU  >=  3000000    //  4 MHz /  4 = 1.0 MHz,   5 MHz /  4 = 1.25 MHz
+      pADC->CTRLC  =  ADC_PRESC_DIV4_gc | ADC_REFSEL_VDDREF_gc | ADC_SAMPCAP_bm;
+ 406:	81 e5       	ldi	r24, 0x51	; 81
+ 408:	82 83       	std	Z+2, r24	; 0x02
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:1696
+      pADC->CTRLC  =  ADC_PRESC_DIV2_gc | ADC_REFSEL_VDDREF_gc | ADC_SAMPCAP_bm;
+    #endif
+    #if   (F_CPU == 6000000 || F_CPU == 12000000 || F_CPU == 24000000 || F_CPU ==25000000)
+      pADC->SAMPCTRL = (7); // 9 ADC clocks, 12 us
+    #elif (F_CPU == 5000000 || F_CPU == 10000000 || F_CPU == 20000000)
+      pADC->SAMPCTRL = (13);   // 15 ADC clock,s 12 us
+ 40a:	8d e0       	ldi	r24, 0x0D	; 13
+ 40c:	85 83       	std	Z+5, r24	; 0x05
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:1700
+    #else
+      pADC->SAMPCTRL = (10); // 12 ADC clocks, 12 us
+    #endif
+    pADC->CTRLD    = ADC_INITDLY_DLY16_gc;
+ 40e:	80 e2       	ldi	r24, 0x20	; 32
+ 410:	83 83       	std	Z+3, r24	; 0x03
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:1701
+    pADC->CTRLA    = ADC_ENABLE_bm;
+ 412:	81 e0       	ldi	r24, 0x01	; 1
+ 414:	80 83       	st	Z, r24
+init_TCA0():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:1791
+
+void __attribute__((weak)) init_TCA0() {
+  /*  TYPE A TIMER   */
+  #if !defined(TCA_BUFFERED_3PIN)
+    #if defined(PORTMUX_CTRLC)
+      PORTMUX.CTRLC = TCA_PORTMUX;
+ 416:	10 92 02 02 	sts	0x0202, r1	; 0x800202 <digital_pin_to_bit_mask+0x7f7bf8>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:1795
+    #else
+      PORTMUX.TCAROUTEA = TCA_PORTMUX;
+    #endif
+    TCA0.SPLIT.CTRLD   = TCA_SPLIT_SPLITM_bm;
+ 41a:	80 93 03 0a 	sts	0x0A03, r24	; 0x800a03 <digital_pin_to_bit_mask+0x7f83f9>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:1796
+    TCA0.SPLIT.LPER    = PWM_TIMER_PERIOD;
+ 41e:	8e ef       	ldi	r24, 0xFE	; 254
+ 420:	80 93 26 0a 	sts	0x0A26, r24	; 0x800a26 <digital_pin_to_bit_mask+0x7f841c>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:1797
+    TCA0.SPLIT.HPER    = PWM_TIMER_PERIOD;
+ 424:	80 93 27 0a 	sts	0x0A27, r24	; 0x800a27 <digital_pin_to_bit_mask+0x7f841d>
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:1798
+    TCA0.SPLIT.CTRLA   = (TIMERA_PRESCALER_bm | TCA_SPLIT_ENABLE_bm);
+ 428:	89 e0       	ldi	r24, 0x09	; 9
+ 42a:	80 93 00 0a 	sts	0x0A00, r24	; 0x800a00 <digital_pin_to_bit_mask+0x7f83f6>
+init_millis():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/wiring.c:1432
+  #if defined(MILLIS_USE_TIMERNONE)
+    badCall("init_millis() is only valid with millis time keeping enabled.");
+  #else
+    #if defined(MILLIS_USE_TIMERA0)
+      #if !defined(TCA_BUFFERED_3PIN)
+        TCA0.SPLIT.INTCTRL = TCA_SPLIT_HUNF_bm;
+ 42e:	82 e0       	ldi	r24, 0x02	; 2
+ 430:	80 93 0a 0a 	sts	0x0A0A, r24	; 0x800a0a <digital_pin_to_bit_mask+0x7f8400>
+main():
+/home/sirius/.arduino15/packages/megaTinyCore/hardware/megaavr/2.6.8/cores/megatinycore/main.cpp:53
+ * just waiting for the DU-series now                                                           */
+int main() {
+  onBeforeInit(); // Emnpty callback called before init but after the .init stuff. First normal code executed
+  init(); // Interrupts are turned on just prior to init() returning.
+  initVariant();
+  if (!onAfterInit()) sei();  // enable interrupts.
+ 434:	78 94       	sei
+setup():
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:8
+bool inverse_sensor_logic = false;
+bool all_leds_when_any_sensor = false;
+
+void setup() {
+  
+  pinMode(JUMPER_NONC_PIN, INPUT_PULLUP);
+ 436:	62 e0       	ldi	r22, 0x02	; 2
+ 438:	81 e0       	ldi	r24, 0x01	; 1
+ 43a:	0f df       	rcall	.-482    	; 0x25a <pinMode>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:9
+  pinMode(JUMPER_ALL_PIN, INPUT_PULLUP);
+ 43c:	62 e0       	ldi	r22, 0x02	; 2
+ 43e:	80 e0       	ldi	r24, 0x00	; 0
+ 440:	0c df       	rcall	.-488    	; 0x25a <pinMode>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:11
+
+  inverse_sensor_logic = digitalRead(JUMPER_NONC_PIN) == LOW;
+ 442:	81 e0       	ldi	r24, 0x01	; 1
+ 444:	9b de       	rcall	.-714    	; 0x17c <digitalRead>
+ 446:	91 e0       	ldi	r25, 0x01	; 1
+ 448:	81 11       	cpse	r24, r1
+ 44a:	90 e0       	ldi	r25, 0x00	; 0
+ 44c:	90 93 31 3c 	sts	0x3C31, r25	; 0x803c31 <inverse_sensor_logic>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:12
+  all_leds_when_any_sensor = digitalRead(JUMPER_ALL_PIN) == LOW;
+ 450:	80 e0       	ldi	r24, 0x00	; 0
+ 452:	94 de       	rcall	.-728    	; 0x17c <digitalRead>
+ 454:	91 e0       	ldi	r25, 0x01	; 1
+ 456:	81 11       	cpse	r24, r1
+ 458:	90 e0       	ldi	r25, 0x00	; 0
+ 45a:	90 93 30 3c 	sts	0x3C30, r25	; 0x803c30 <__data_end>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:14
+
+  pinMode(BUZZER_PIN, OUTPUT);
+ 45e:	61 e0       	ldi	r22, 0x01	; 1
+ 460:	8f e0       	ldi	r24, 0x0F	; 15
+ 462:	fb de       	rcall	.-522    	; 0x25a <pinMode>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:15
+  digitalWrite(BUZZER_PIN, HIGH);
+ 464:	61 e0       	ldi	r22, 0x01	; 1
+ 466:	8f e0       	ldi	r24, 0x0F	; 15
+ 468:	a4 de       	rcall	.-696    	; 0x1b2 <digitalWrite>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:17
+
+  pinMode(BOARD_LED_PIN, OUTPUT);
+ 46a:	61 e0       	ldi	r22, 0x01	; 1
+ 46c:	82 e0       	ldi	r24, 0x02	; 2
+ 46e:	f5 de       	rcall	.-534    	; 0x25a <pinMode>
+ 470:	61 e0       	ldi	r22, 0x01	; 1
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:18
+  digitalWrite(BOARD_LED_PIN, HIGH);
+ 472:	82 e0       	ldi	r24, 0x02	; 2
+ 474:	9e de       	rcall	.-708    	; 0x1b2 <digitalWrite>
+ 476:	68 ec       	ldi	r22, 0xC8	; 200
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:20
+
+  delay(200);
+ 478:	70 e0       	ldi	r23, 0x00	; 0
+ 47a:	80 e0       	ldi	r24, 0x00	; 0
+ 47c:	90 e0       	ldi	r25, 0x00	; 0
+ 47e:	54 de       	rcall	.-856    	; 0x128 <delay>
+ 480:	60 e0       	ldi	r22, 0x00	; 0
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:21
+  digitalWrite(BOARD_LED_PIN, LOW);
+ 482:	82 e0       	ldi	r24, 0x02	; 2
+ 484:	96 de       	rcall	.-724    	; 0x1b2 <digitalWrite>
+ 486:	60 e0       	ldi	r22, 0x00	; 0
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:22
+  digitalWrite(BUZZER_PIN, LOW);
+ 488:	8f e0       	ldi	r24, 0x0F	; 15
+ 48a:	93 de       	rcall	.-730    	; 0x1b2 <digitalWrite>
+ 48c:	68 ec       	ldi	r22, 0xC8	; 200
+ 48e:	70 e0       	ldi	r23, 0x00	; 0
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:24
+
+  delay(200);
+ 490:	80 e0       	ldi	r24, 0x00	; 0
+ 492:	90 e0       	ldi	r25, 0x00	; 0
+ 494:	49 de       	rcall	.-878    	; 0x128 <delay>
+ 496:	ce e1       	ldi	r28, 0x1E	; 30
+ 498:	dc e3       	ldi	r29, 0x3C	; 60
+ 49a:	89 81       	ldd	r24, Y+1	; 0x01
+ 49c:	98 81       	ld	r25, Y
+ 49e:	62 e0       	ldi	r22, 0x02	; 2
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:27
+
+  for (size_t i=0; i < NUM_OF_SENSORS; i++) {
+    if (sensors[i].is_enabled) {
+ 4a0:	91 11       	cpse	r25, r1
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:28
+      pinMode(sensors[i].pin, INPUT_PULLUP);
+ 4a2:	01 c0       	rjmp	.+2      	; 0x4a6 <__DATA_REGION_LENGTH__+0xa6>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:27
+  digitalWrite(BUZZER_PIN, LOW);
+
+  delay(200);
+
+  for (size_t i=0; i < NUM_OF_SENSORS; i++) {
+    if (sensors[i].is_enabled) {
+ 4a4:	60 e0       	ldi	r22, 0x00	; 0
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:30
+      pinMode(sensors[i].pin, INPUT_PULLUP);
+    } else {
+      pinMode(sensors[i].pin, INPUT);
+ 4a6:	d9 de       	rcall	.-590    	; 0x25a <pinMode>
+ 4a8:	23 96       	adiw	r28, 0x03	; 3
+ 4aa:	3c e3       	ldi	r19, 0x3C	; 60
+ 4ac:	c0 33       	cpi	r28, 0x30	; 48
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:26
+  digitalWrite(BOARD_LED_PIN, LOW);
+  digitalWrite(BUZZER_PIN, LOW);
+
+  delay(200);
+
+  for (size_t i=0; i < NUM_OF_SENSORS; i++) {
+ 4ae:	d3 07       	cpc	r29, r19
+ 4b0:	a1 f7       	brne	.-24     	; 0x49a <__DATA_REGION_LENGTH__+0x9a>
+ 4b2:	c0 e0       	ldi	r28, 0x00	; 0
+ 4b4:	dc e3       	ldi	r29, 0x3C	; 60
+ 4b6:	68 81       	ld	r22, Y
+ 4b8:	89 81       	ldd	r24, Y+1	; 0x01
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:35
+      pinMode(sensors[i].pin, INPUT);
+    }
+  }
+
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+    pinMode(leds[i].pin, leds[i].is_enabled);
+ 4ba:	cf de       	rcall	.-610    	; 0x25a <pinMode>
+ 4bc:	25 96       	adiw	r28, 0x05	; 5
+ 4be:	8c e3       	ldi	r24, 0x3C	; 60
+ 4c0:	ce 31       	cpi	r28, 0x1E	; 30
+ 4c2:	d8 07       	cpc	r29, r24
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:34
+    } else {
+      pinMode(sensors[i].pin, INPUT);
+    }
+  }
+
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+ 4c4:	c1 f7       	brne	.-16     	; 0x4b6 <__DATA_REGION_LENGTH__+0xb6>
+ 4c6:	f8 94       	cli
+ 4c8:	81 e0       	ldi	r24, 0x01	; 1
+ 4ca:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <digital_pin_to_bit_mask+0x7f7a56>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:42
+
+
+  cli();
+
+  // RTC PIT
+  CLKCTRL.MCLKCTRLA = 0x1;
+ 4ce:	10 92 47 01 	sts	0x0147, r1	; 0x800147 <digital_pin_to_bit_mask+0x7f7b3d>
+ 4d2:	80 93 52 01 	sts	0x0152, r24	; 0x800152 <digital_pin_to_bit_mask+0x7f7b48>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:45
+  RTC_CLKSEL = 0x0;
+
+  RTC_PITINTCTRL = 0x1;
+ 4d6:	89 e3       	ldi	r24, 0x39	; 57
+ 4d8:	80 93 50 01 	sts	0x0150, r24	; 0x800150 <digital_pin_to_bit_mask+0x7f7b46>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:46
+  RTC_PITCTRLA = RTC_PERIOD_CYC256_gc + 1;
+ 4dc:	78 94       	sei
+loop():
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:48
+
+  sei();
+ 4de:	01 e0       	ldi	r16, 0x01	; 1
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:64
+
+  // read sensors
+  for (size_t i=0; i < NUM_OF_SENSORS; i++) {
+    if (sensors[i].is_enabled) {
+      // internal pullup -> sensors are active LOW
+      sensors[i].state = ( digitalRead(sensors[i].pin) == inverse_sensor_logic );
+ 4e0:	15 e0       	ldi	r17, 0x05	; 5
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:77
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+    if (leds[i].state == LOW && leds[i].timer >= TICKS_TO_ON) {
+      // enable led when condition met for enough time
+      leds[i].state = HIGH;
+      leds[i].timer = 0;
+    } else if (leds[i].state == HIGH && leds[i].timer >= ON_TICKS_TO_BUZZER) {
+ 4e2:	6a e0       	ldi	r22, 0x0A	; 10
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:52
+
+  sei();
+}
+
+void loop() {
+  delay(10);
+ 4e4:	70 e0       	ldi	r23, 0x00	; 0
+ 4e6:	80 e0       	ldi	r24, 0x00	; 0
+ 4e8:	90 e0       	ldi	r25, 0x00	; 0
+ 4ea:	1e de       	rcall	.-964    	; 0x128 <delay>
+ 4ec:	6a e0       	ldi	r22, 0x0A	; 10
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:57
+  
+  // toggle led
+  // digitalWrite(BOARD_LED_PIN, !digitalRead(BOARD_LED_PIN));
+
+  delay(10);
+ 4ee:	70 e0       	ldi	r23, 0x00	; 0
+ 4f0:	80 e0       	ldi	r24, 0x00	; 0
+ 4f2:	90 e0       	ldi	r25, 0x00	; 0
+ 4f4:	19 de       	rcall	.-974    	; 0x128 <delay>
+ 4f6:	ce e1       	ldi	r28, 0x1E	; 30
+ 4f8:	dc e3       	ldi	r29, 0x3C	; 60
+ 4fa:	88 81       	ld	r24, Y
+ 4fc:	88 23       	and	r24, r24
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:62
+
+
+  // read sensors
+  for (size_t i=0; i < NUM_OF_SENSORS; i++) {
+    if (sensors[i].is_enabled) {
+ 4fe:	69 f0       	breq	.+26     	; 0x51a <__DATA_REGION_LENGTH__+0x11a>
+ 500:	89 81       	ldd	r24, Y+1	; 0x01
+ 502:	3c de       	rcall	.-904    	; 0x17c <digitalRead>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:64
+      // internal pullup -> sensors are active LOW
+      sensors[i].state = ( digitalRead(sensors[i].pin) == inverse_sensor_logic );
+ 504:	30 91 31 3c 	lds	r19, 0x3C31	; 0x803c31 <inverse_sensor_logic>
+ 508:	08 2e       	mov	r0, r24
+ 50a:	00 0c       	add	r0, r0
+ 50c:	99 0b       	sbc	r25, r25
+ 50e:	21 e0       	ldi	r18, 0x01	; 1
+ 510:	38 17       	cp	r19, r24
+ 512:	19 06       	cpc	r1, r25
+ 514:	09 f0       	breq	.+2      	; 0x518 <__DATA_REGION_LENGTH__+0x118>
+ 516:	20 e0       	ldi	r18, 0x00	; 0
+ 518:	2a 83       	std	Y+2, r18	; 0x02
+ 51a:	23 96       	adiw	r28, 0x03	; 3
+ 51c:	3c e3       	ldi	r19, 0x3C	; 60
+ 51e:	c0 33       	cpi	r28, 0x30	; 48
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:61
+
+  delay(10);
+
+
+  // read sensors
+  for (size_t i=0; i < NUM_OF_SENSORS; i++) {
+ 520:	d3 07       	cpc	r29, r19
+ 522:	59 f7       	brne	.-42     	; 0x4fa <__DATA_REGION_LENGTH__+0xfa>
+ 524:	60 91 04 3c 	lds	r22, 0x3C04	; 0x803c04 <__DATA_REGION_ORIGIN__+0x4>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:68
+      // internal pullup -> sensors are active LOW
+      sensors[i].state = ( digitalRead(sensors[i].pin) == inverse_sensor_logic );
+    } 
+  }
+
+  digitalWrite(BOARD_LED_PIN, !leds[0].state);
+ 528:	60 27       	eor	r22, r16
+ 52a:	82 e0       	ldi	r24, 0x02	; 2
+ 52c:	42 de       	rcall	.-892    	; 0x1b2 <digitalWrite>
+ 52e:	e0 e0       	ldi	r30, 0x00	; 0
+ 530:	fc e3       	ldi	r31, 0x3C	; 60
+main():
+ 532:	60 e0       	ldi	r22, 0x00	; 0
+ 534:	90 e0       	ldi	r25, 0x00	; 0
+ 536:	80 e0       	ldi	r24, 0x00	; 0
+loop():
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:71
+
+  // handle led timers
+  bool enable_buzzer = false;
+ 538:	24 81       	ldd	r18, Z+4	; 0x04
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:72
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+ 53a:	18 9f       	mul	r17, r24
+ 53c:	d0 01       	movw	r26, r0
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:73
+    if (leds[i].state == LOW && leds[i].timer >= TICKS_TO_ON) {
+ 53e:	19 9f       	mul	r17, r25
+ 540:	b0 0d       	add	r27, r0
+ 542:	11 24       	eor	r1, r1
+ 544:	a0 50       	subi	r26, 0x00	; 0
+ 546:	b4 4c       	sbci	r27, 0xC4	; 196
+ 548:	21 11       	cpse	r18, r1
+ 54a:	21 c0       	rjmp	.+66     	; 0x58e <__DATA_REGION_LENGTH__+0x18e>
+ 54c:	12 96       	adiw	r26, 0x02	; 2
+ 54e:	2d 91       	ld	r18, X+
+ 550:	3c 91       	ld	r19, X
+ 552:	13 97       	sbiw	r26, 0x03	; 3
+ 554:	22 33       	cpi	r18, 0x32	; 50
+ 556:	31 05       	cpc	r19, r1
+ 558:	28 f0       	brcs	.+10     	; 0x564 <__DATA_REGION_LENGTH__+0x164>
+ 55a:	04 83       	std	Z+4, r16	; 0x04
+ 55c:	12 96       	adiw	r26, 0x02	; 2
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:75
+      // enable led when condition met for enough time
+      leds[i].state = HIGH;
+ 55e:	1d 92       	st	X+, r1
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:76
+      leds[i].timer = 0;
+ 560:	1c 92       	st	X, r1
+ 562:	13 97       	sbiw	r26, 0x03	; 3
+ 564:	01 96       	adiw	r24, 0x01	; 1
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:72
+
+  digitalWrite(BOARD_LED_PIN, !leds[0].state);
+
+  // handle led timers
+  bool enable_buzzer = false;
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+ 566:	35 96       	adiw	r30, 0x05	; 5
+ 568:	86 30       	cpi	r24, 0x06	; 6
+ 56a:	91 05       	cpc	r25, r1
+ 56c:	29 f7       	brne	.-54     	; 0x538 <__DATA_REGION_LENGTH__+0x138>
+ 56e:	8f e0       	ldi	r24, 0x0F	; 15
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:83
+      // enable buzzer when on for too long
+      enable_buzzer = true;
+    } 
+  }
+
+  digitalWrite(BUZZER_PIN, enable_buzzer);
+ 570:	20 de       	rcall	.-960    	; 0x1b2 <digitalWrite>
+ 572:	c0 e0       	ldi	r28, 0x00	; 0
+ 574:	dc e3       	ldi	r29, 0x3C	; 60
+ 576:	89 81       	ldd	r24, Y+1	; 0x01
+ 578:	98 81       	ld	r25, Y
+ 57a:	60 e0       	ldi	r22, 0x00	; 0
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:88
+
+
+  // write led state to physical output
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+    if (leds[i].is_enabled) {
+ 57c:	91 11       	cpse	r25, r1
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:91
+      digitalWrite(leds[i].pin, leds[i].state);
+    } else {
+      digitalWrite(leds[i].pin, LOW);
+ 57e:	6c 81       	ldd	r22, Y+4	; 0x04
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:88
+  digitalWrite(BUZZER_PIN, enable_buzzer);
+
+
+  // write led state to physical output
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+    if (leds[i].is_enabled) {
+ 580:	18 de       	rcall	.-976    	; 0x1b2 <digitalWrite>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:89
+      digitalWrite(leds[i].pin, leds[i].state);
+ 582:	25 96       	adiw	r28, 0x05	; 5
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:91
+    } else {
+      digitalWrite(leds[i].pin, LOW);
+ 584:	8c e3       	ldi	r24, 0x3C	; 60
+ 586:	ce 31       	cpi	r28, 0x1E	; 30
+ 588:	d8 07       	cpc	r29, r24
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:87
+
+  digitalWrite(BUZZER_PIN, enable_buzzer);
+
+
+  // write led state to physical output
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+ 58a:	a9 f7       	brne	.-22     	; 0x576 <__DATA_REGION_LENGTH__+0x176>
+ 58c:	aa cf       	rjmp	.-172    	; 0x4e2 <__DATA_REGION_LENGTH__+0xe2>
+ 58e:	12 96       	adiw	r26, 0x02	; 2
+ 590:	4d 91       	ld	r20, X+
+ 592:	5c 91       	ld	r21, X
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:77
+  for (size_t i=0; i < NUM_OF_LEDSTRIPS; i++) {
+    if (leds[i].state == LOW && leds[i].timer >= TICKS_TO_ON) {
+      // enable led when condition met for enough time
+      leds[i].state = HIGH;
+      leds[i].timer = 0;
+    } else if (leds[i].state == HIGH && leds[i].timer >= ON_TICKS_TO_BUZZER) {
+ 594:	48 38       	cpi	r20, 0x88	; 136
+ 596:	53 41       	sbci	r21, 0x13	; 19
+ 598:	28 f3       	brcs	.-54     	; 0x564 <__DATA_REGION_LENGTH__+0x164>
+main():
+ 59a:	62 2f       	mov	r22, r18
+ 59c:	e3 cf       	rjmp	.-58     	; 0x564 <__DATA_REGION_LENGTH__+0x164>
+
+0000059e <__muluhisi3>:
+__muluhisi3():
+ 59e:	09 d0       	rcall	.+18     	; 0x5b2 <__umulhisi3>
+/mnt/Storage/Github/LED-szafka-dlataty/LED_szafka_src/LED_szafka_src.ino:79
+      // enable buzzer when on for too long
+      enable_buzzer = true;
+ 5a0:	a5 9f       	mul	r26, r21
+ 5a2:	90 0d       	add	r25, r0
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:629
+ 5a4:	b4 9f       	mul	r27, r20
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:630
+ 5a6:	90 0d       	add	r25, r0
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:631
+ 5a8:	a4 9f       	mul	r26, r20
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:632
+ 5aa:	80 0d       	add	r24, r0
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:633
+ 5ac:	91 1d       	adc	r25, r1
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:634
+ 5ae:	11 24       	eor	r1, r1
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:635
+ 5b0:	08 95       	ret
+
+000005b2 <__umulhisi3>:
+__umulhisi3():
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:564
+ 5b2:	a2 9f       	mul	r26, r18
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:565
+ 5b4:	b0 01       	movw	r22, r0
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:566
+ 5b6:	b3 9f       	mul	r27, r19
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:567
+ 5b8:	c0 01       	movw	r24, r0
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:568
+ 5ba:	a3 9f       	mul	r26, r19
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:573
+ 5bc:	70 0d       	add	r23, r0
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:574
+ 5be:	81 1d       	adc	r24, r1
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:575
+ 5c0:	11 24       	eor	r1, r1
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:576
+ 5c2:	91 1d       	adc	r25, r1
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:580
+ 5c4:	b2 9f       	mul	r27, r18
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:581
+ 5c6:	70 0d       	add	r23, r0
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:582
+ 5c8:	81 1d       	adc	r24, r1
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:583
+ 5ca:	11 24       	eor	r1, r1
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:584
+ 5cc:	91 1d       	adc	r25, r1
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:585
+ 5ce:	08 95       	ret
+
+000005d0 <_exit>:
+exit():
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 5d0:	f8 94       	cli
+
+000005d2 <__stop_program>:
+__stop_program():
+/home/admin/Arduino/toolchain-avr-special/gcc-build/avr/avrxmega3/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 5d2:	ff cf       	rjmp	.-2      	; 0x5d2 <__stop_program>
