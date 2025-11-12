@@ -43,10 +43,10 @@ const uint32_t ON_TICKS_TO_BUZZER = 64UL * 60UL * 10UL;
 const uint32_t ON_TICKS_TO_BUZZER_OFF = ON_TICKS_TO_BUZZER + 64UL * 15UL;
 
 const uint32_t QUICK_TOGGLE_MIN_TICKS = TICKS_TO_ON;
-const uint32_t QUICK_TOGGLE_MAX_TICKS = TICKS_TO_ON * 5;
-const uint32_t QUICK_TOGGLE_TIMEOUT_TICKS = 64 * 15;
+const uint32_t QUICK_TOGGLE_MAX_TICKS = TICKS_TO_ON * 9;
+const uint32_t QUICK_TOGGLE_TIMEOUT_TICKS = 64 * 25;
 
-const uint32_t QUICK_TOGGLE_NUM_TO_FORCE_ON = 4;
+const uint32_t QUICK_TOGGLE_NUM_TO_FORCE_ON = 3;
 const uint32_t FORCE_ON_DURATION_TICKS = 64UL * 60UL * 3UL;
 
 const pin_size_t BUZZER_PIN = PIN_PA2; 
@@ -69,8 +69,8 @@ const pin_size_t JUMPER_ALL_PIN = PIN_PA5;
 #define LED_CONDITIONS \
   S1, \
   S1 || S2, \
-  S3, \
-  S3 || S4, \
+  S3, \ 
+  S4, \
   S5, \
   S6, 
 
